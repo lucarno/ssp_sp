@@ -1,11 +1,7 @@
-#library(dplyr)
+
 library(RSelenium)
 
 # one needs to download java development kit, insert the selenium standalone server at the folder of the script. for a nice walkthrough, see https://rpubs.com/grahamplace/rseleniumonmac
-
-#res = rsDriver(port = 4567L, browser = c('chrome'), version = "latest", chromever = "latest",
-#         geckover = "latest", iedrver = NULL, phantomver = "2.1.1",
-#         verbose = TRUE, check = TRUE)
 
 remDr <- remoteDriver(remoteServerAddr = "localhost"
                       , port = 5556
