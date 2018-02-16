@@ -35,14 +35,4 @@ ggmap(spo) +
         axis.text.y=element_blank(),
         axis.ticks.y=element_blank())
 
-santos = get_map("Santos,Brazil", zoom=11,maptype = 'roadmap')
-ggmap(santos) + 
-  geom_point(data=df1, aes(x=lon, y=lat), color="red", size=1.5, alpha=.5) +
-  theme_fivethirtyeight() +
-  ggtitle('Deaths by Police Intervention',subtitle='From 2013 to 2017\nSource: SSP/SP') +
-  theme(axis.title.x=element_blank(),
-        axis.text.x=element_blank(),
-        axis.ticks.x=element_blank(),
-        axis.title.y=element_blank(),
-        axis.text.y=element_blank(),
-        axis.ticks.y=element_blank())
+ggsave('map_spo.pdf', plot = map_spo, device = 'pdf',height = 20, width = 20, units = 'cm')
