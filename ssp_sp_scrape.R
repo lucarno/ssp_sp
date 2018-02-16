@@ -18,7 +18,7 @@ remDr <- res[["client"]]
 
 buttons = c('cphBody_btnMortePolicial','cphBody_btnFurtoVeiculo','cphBody_btnRouboVeiculo','cphBody_btnFurtoCelular','cphBody_btnRouboCelular','cphBody_btnIML')
 
-#'cphBody_btnMorteSuspeita' not available (2/15/2)
+#'cphBody_btnMorteSuspeita' not available (2/15/2018)
 
 for(k in buttons){
     remDr$navigate("http://www.ssp.sp.gov.br/transparenciassp/Consulta.aspx")
