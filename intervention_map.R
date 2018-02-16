@@ -4,7 +4,7 @@ library(ggmap)
 library(ggplot2)
 library(ggthemes)
 
-setwd('/Users/lucasnovaes/Dropbox/Working papers/2015 policia/data/intervencao')
+setwd('path')
 
 #you only need to run this once
 #files<-list.files(pattern='Dados')
